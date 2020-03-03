@@ -1,0 +1,17 @@
+{
+		"scripts": {
+				"start": "node dist/index",
+				"start-dev": "npm run build-clear; tsc-watch --onSuccess 'npm start'",
+				"build": "npm run build-clear; tsc",
+				"build-clear": "rm -rf dist"
+		},
+		"dependencies": {
+				"@types/node": "latest",
+				"js-image-generator": "latest"
+		},
+		"devDependencies": {
+      "tsc-watch": "latest",
+      "typescript": "latest"
+		},
+    "private": true
+}

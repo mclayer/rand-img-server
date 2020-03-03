@@ -1,0 +1,11 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+    {
+      "name": "Debug app",
+      "command": "npm run start-dev",
+      "request": "launch",
+      "type": "pwa-node-terminal"
+    }
+	]
+}

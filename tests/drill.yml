@@ -1,0 +1,17 @@
+threads: 4
+base: 'http://localhost:3001'
+iterations: 5
+
+plan:
+  - name: Fetch some users by hash
+    request:
+      url: /?width={{ item.w }}&height={{ item.h }}&quality=100
+    with_items:
+      - { w: 1000, h: 1000 }
+      - { w: 1000, h: 1000 }
+      - { w: 5000, h: 5000 }
+      - { w: 5000, h: 5000 }
+      - { w: 5000, h: 5000 }
+      - { w: 5000, h: 5000 }
+      - { w: 5000, h: 5000 }
+      - { w: 5000, h: 5000 }
